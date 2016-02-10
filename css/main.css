@@ -5885,6 +5885,9 @@ body {
 /*------------------------------------------------------------------------------
                               Bike-Photos Row Styling
 ------------------------------------------------------------------------------*/
+#bikeCarousel {
+  box-shadow: 0 4px rgba(255, 255, 255, 0.5); }
+
 .bike-slider {
   display: block; }
   @media (min-width: 768px) {
@@ -5892,8 +5895,7 @@ body {
       display: none; } }
 
 .slider-holder {
-  height: 14rem;
-  padding: 5px; }
+  height: 14rem; }
 
 .slider-clip {
   position: relative;
@@ -5907,13 +5909,15 @@ body {
 
 .bike-holder {
   height: 14rem;
-  overflow: hidden; }
+  overflow: hidden;
+  box-shadow: 0 4px rgba(255, 255, 255, 0.5); }
 
 /*------------------------------------------------------------------------------
                               Contact-Info Row Styling
 ------------------------------------------------------------------------------*/
 #map {
-  height: 400px; }
+  height: 400px;
+  box-shadow: 0 4px rgba(255, 255, 255, 0.5); }
 
 .map-info {
   max-width: 250px; }

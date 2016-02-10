@@ -111,6 +111,10 @@ body{
 /*------------------------------------------------------------------------------
                               Bike-Photos Row Styling
 ------------------------------------------------------------------------------*/
+#bikeCarousel {
+  box-shadow: 0 4px rgba(255, 255, 255, .5);
+}
+
 .bike-slider {
   display: block;
 
@@ -120,7 +124,6 @@ body{
 }
 .slider-holder {
   height: 14rem;
-  padding: 5px;
 }
 .slider-clip {
   position: relative;
@@ -137,6 +140,7 @@ body{
 .bike-holder {
   height: 14rem;
   overflow: hidden;
+  box-shadow: 0 4px rgba(255, 255, 255, .5);
 }
 
 
@@ -145,6 +149,7 @@ body{
 ------------------------------------------------------------------------------*/
 #map {
   height: 400px;
+  box-shadow: 0 4px rgba(255, 255, 255, .5);
 }
 .map-info {
   max-width: 250px;
