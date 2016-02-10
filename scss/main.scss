@@ -86,11 +86,9 @@ body{
                               Bike-Photos Row Styling
 ------------------------------------------------------------------------------*/
 .bike-photos {
-  & > .col-sm-4:not( :first-child ) {
-    display: none;
-  }
+  display: none;
+  
   @media ( min-width: $screen-sm-min) {
-    & > .col-sm-4:not( :first-child ) {
       display: block;
     }
   }
