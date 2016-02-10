@@ -1,0 +1,8 @@
+//start sass: sass --watch scss:css
+
+/* Bootstrap Variables */
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+$grid-gutter-width: 10px;
+$container-large-desktop: ( 965px + $grid-gutter-width );
+/* Import Bootstrap */
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
