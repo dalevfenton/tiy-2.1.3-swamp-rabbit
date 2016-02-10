@@ -5820,9 +5820,23 @@ img {
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
+html {
+  height: 100%; }
+
 body {
-  background: url(../images/bg.jpg) center center fixed;
-  background-size: cover; }
+  background-color: #434343;
+  background-image: linear-gradient(#282828, #434343) no-repeat;
+  height: 100%; }
+
+.bg-grid {
+  background-color: transparent;
+  background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05) 76%, transparent 77%, transparent);
+  background-size: 50px 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
 
 .container {
   text-align: center; }
@@ -5833,7 +5847,8 @@ body {
 .holder {
   background: rgba(255, 255, 255, 0.8);
   position: relative;
-  padding: 15px; }
+  padding: 15px;
+  box-shadow: 0 4px rgba(255, 255, 255, 0.5); }
 
 .overlay {
   position: absolute;
@@ -5870,14 +5885,46 @@ body {
 /*------------------------------------------------------------------------------
                               Bike-Photos Row Styling
 ------------------------------------------------------------------------------*/
-.bike-photos > .col-sm-4:not(:first-child) {
+.bike-slider {
+  display: block; }
+  @media (min-width: 768px) {
+    .bike-slider {
+      display: none; } }
+
+.slider-holder {
+  height: 14rem;
+  padding: 5px; }
+
+.slider-clip {
+  position: relative;
+  overflow: hidden; }
+
+.bike-photos {
   display: none; }
-@media (min-width: 768px) {
-  .bike-photos > .col-sm-4:not(:first-child) {
-    display: block; } }
+  @media (min-width: 768px) {
+    .bike-photos {
+      display: block; } }
 
 .bike-holder {
-  height: 20rem;
+  height: 14rem;
   overflow: hidden; }
+
+/*------------------------------------------------------------------------------
+                              Contact-Info Row Styling
+------------------------------------------------------------------------------*/
+#map {
+  height: 400px; }
+
+.map-info {
+  max-width: 250px; }
+  .map-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem; }
+
+/*------------------------------------------------------------------------------
+                              Copyright Row Styling
+------------------------------------------------------------------------------*/
+.copyright {
+  margin-bottom: 50px; }
 
 /*# sourceMappingURL=main.css.map */
