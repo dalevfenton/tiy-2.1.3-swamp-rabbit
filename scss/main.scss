@@ -1,4 +1,4 @@
-//start sass: sass --watch scss:css/style.css
+//start sass: sass --watch scss:css
 
 /* Bootstrap Variables */
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
@@ -88,6 +88,11 @@ body{
 .bike-photos {
   & > .col-sm-4:not( :first-child ) {
     display: none;
+  }
+  @media ( min-width: $screen-sm-min) {
+    & > .col-sm-4:not( :first-child ) {
+      display: block;
+    }
   }
 }
 
