@@ -6,3 +6,92 @@ $grid-gutter-width: 10px;
 $container-large-desktop: ( 965px + $grid-gutter-width );
 /* Import Bootstrap */
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+/*------------------------------------------------------------------------------
+                              Generic / Reusable Styling
+------------------------------------------------------------------------------*/
+
+img {
+  max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+body{
+  background: url(../images/bg.jpg) center center fixed;
+  background-size: cover;
+}
+.container{
+  text-align: center;
+}
+
+.row {
+  margin-top: 2rem;
+}
+
+.holder {
+  background: rgba(255, 255, 255, .8);
+  position: relative;
+  padding: 15px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  // background: rgba(255, 255, 255, .8);
+}
+
+.tagline {
+}
+
+/*------------------------------------------------------------------------------
+                              Header Row Styling
+------------------------------------------------------------------------------*/
+.header {
+  .holder{
+      height: 10rem;
+  }
+  h1 {
+    position: absolute;
+    top: 1rem;
+    right: 10%;
+    font-size: 3rem;
+    width: 60%;
+  }
+}
+
+.logo {
+  width: 15%;
+  display: inline-block;
+  position: absolute;
+  top: 1rem;
+  left: 10%;
+}
+
+/*------------------------------------------------------------------------------
+                              Promo Row Styling
+------------------------------------------------------------------------------*/
+.promo {
+
+  span {
+    display: inline-block;
+
+  }
+}
+
+/*------------------------------------------------------------------------------
+                              Bike-Photos Row Styling
+------------------------------------------------------------------------------*/
+.bike-photos {
+  & > .col-sm-4:not( :first-child ) {
+    display: none;
+  }
+}
+
+.bike-holder {
+  height: 20rem;
+  overflow: hidden;
+}
