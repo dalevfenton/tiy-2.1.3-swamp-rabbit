@@ -5820,18 +5820,19 @@ img {
 h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
-html {
-  height: 100%; }
-
 body {
-  background-color: #434343;
-  background-image: linear-gradient(#282828, #434343) no-repeat;
+  font-family: "Krona One", sans-serif;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.6);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.95);
+  transition: .25s ease-in-out;
+  background: url(../images/road-bg.jpg) center top no-repeat;
+  background-size: cover;
+  position: relative;
   height: 100%; }
 
 .bg-grid {
-  background-color: transparent;
-  background-image: linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05) 76%, transparent 77%, transparent), linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, 0.05) 25%, rgba(255, 255, 255, 0.05) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05) 76%, transparent 77%, transparent);
-  background-size: 50px 50px;
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
   right: 0;
@@ -5842,39 +5843,41 @@ body {
   text-align: center; }
 
 .row {
-  margin-top: 2rem; }
+  padding: 1rem 0;
+  border-bottom: 3px dashed rgba(255, 255, 255, 0.6); }
+  .row:hover h1, .row:hover span, .row:active h1, .row:active span {
+    color: white; }
 
 .holder {
-  background: rgba(255, 255, 255, 0.8);
   position: relative;
-  padding: 15px;
-  box-shadow: 0 4px rgba(255, 255, 255, 0.5); }
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0; }
+  padding: 0 .5rem; }
+  .holder span {
+    font-size: 1rem;
+    line-height: 1.45rem;
+    vertical-align: middle; }
 
 /*------------------------------------------------------------------------------
                               Header Row Styling
 ------------------------------------------------------------------------------*/
-.header .holder {
-  height: 10rem; }
-.header h1 {
-  position: absolute;
-  top: 1rem;
-  right: 10%;
-  font-size: 3rem;
-  width: 60%; }
-
-.logo {
-  width: 15%;
-  display: inline-block;
-  position: absolute;
-  top: 1rem;
-  left: 10%; }
+.header {
+  position: relative; }
+  .header h1 {
+    width: 90%;
+    left: 5%;
+    top: -1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    position: absolute; }
+    @media (min-width: 768px) {
+      .header h1 {
+        font-size: 3.5rem; } }
+  .header .holder {
+    text-align: center;
+    padding: 0; }
+  .header .holder-title {
+    margin-top: 2rem; }
+  .header img {
+    display: block; }
 
 /*------------------------------------------------------------------------------
                               Promo Row Styling
@@ -5885,9 +5888,6 @@ body {
 /*------------------------------------------------------------------------------
                               Bike-Photos Row Styling
 ------------------------------------------------------------------------------*/
-#bikeCarousel {
-  box-shadow: 0 4px rgba(255, 255, 255, 0.5); }
-
 .bike-slider {
   display: block; }
   @media (min-width: 768px) {
@@ -5909,15 +5909,30 @@ body {
 
 .bike-holder {
   height: 14rem;
-  overflow: hidden;
-  box-shadow: 0 4px rgba(255, 255, 255, 0.5); }
+  overflow: hidden; }
+
+.carousel-caption {
+  color: black;
+  top: 0;
+  bottom: none;
+  pointer-events: none; }
+  .carousel-caption h2 {
+    background: rgba(255, 255, 255, 0.6);
+    padding: .5rem;
+    font-size: 1rem; }
+
+.photo-credit {
+  padding: .5rem; }
+  .photo-credit a, .photo-credit span {
+    font-size: .75rem; }
 
 /*------------------------------------------------------------------------------
                               Contact-Info Row Styling
 ------------------------------------------------------------------------------*/
 #map {
   height: 400px;
-  box-shadow: 0 4px rgba(255, 255, 255, 0.5); }
+  color: #333;
+  text-shadow: none; }
 
 .map-info {
   max-width: 250px; }
@@ -5929,6 +5944,6 @@ body {
                               Copyright Row Styling
 ------------------------------------------------------------------------------*/
 .copyright {
-  margin-bottom: 50px; }
+  margin-bottom: 1.5rem; }
 
 /*# sourceMappingURL=main.css.map */

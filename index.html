@@ -4,25 +4,37 @@
   <meta charset="UTF-8">
   <title>Swamp Rabbit Cycling</title>
   <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <div class="bg-grid"></div>
   <div class="container">
     <div class="row header">
-      <div class="col-sm-12">
+      <div class="col-xs-12">
+        <div class="holder holder-title">
+          <h1>SWAMP RABBIT CYCLING</h1>
+        </div>
+      </div>
+      <div class="col-xs-4">
           <div class="holder">
-            <div class="overlay"></div>
-            <img src="images/bike.png" class="logo">
-            <h1>Swamp Rabbit Cycling</h1>
+            <img src="images/swamp.svg" class="logo">
           </div>
       </div>
+      <div class="col-xs-4">
+        <div class="holder">
+          <img src="images/rabbit.svg" class="logo">
+
+        </div>
+      </div>
+      <div class="col-xs-4">
+        <div class="holder">
+          <img src="images/cycle.svg" class="logo">
+        </div>
+      </div>
     </div>
-    <div class="row promo tagline">
+    <div class="row promo">
       <div class="col-sm-12">
         <div class="holder">
-          <span>
-            Bringing you the best in bicycle gear, equipment and community since 1999!
-          </span>
+          <span>Bringing you the best in bicycle gear, equipment and community since 1999!</span>
         </div>
       </div>
     </div>
@@ -40,8 +52,10 @@
           <div class="carousel-inner" role="listbox">
             <div class="item active">
               <div class="slider-holder">
-                <div class="slider-clip">
-                  <img class="first-slide" src="images/bike-slider-1.jpg" alt="First slide">
+                <div id="slide-1" class="slider-clip">
+                  <a href="#" target="_blank" >
+                    <img class="first-slide" src="images/bike-slider-1.jpg" alt="First slide">
+                  </a>
                   <div class="container">
                     <div class="carousel-caption">
                     </div>
@@ -51,8 +65,10 @@
             </div>
             <div class="item">
               <div class="slider-holder">
-                <div class="slider-clip">
-                  <img class="second-slide" src="images/bike-slider-2.jpg" alt="Second slide">
+                <div id="slide-2" class="slider-clip">
+                  <a href="#" target="_blank" >
+                    <img class="second-slide" src="images/bike-slider-2.jpg" alt="Second slide">
+                  </a>
                   <div class="container">
                     <div class="carousel-caption">
                     </div>
@@ -62,8 +78,10 @@
             </div>
             <div class="item">
               <div class="slider-holder">
-                <div class="slider-clip">
-                  <img class="third-slide" src="images/bike-slider-3.jpg" alt="Third slide">
+                <div id="slide-3" class="slider-clip">
+                  <a href="#" target="_blank" >
+                    <img class="third-slide" src="images/bike-slider-3.jpg" alt="Third slide">
+                  </a>
                   <div class="container">
                     <div class="carousel-caption">
                     </div>
@@ -81,31 +99,37 @@
             <span class="sr-only">Next</span>
           </a>
         </div><!-- /.carousel -->
+        <div class="photo-credit"><span>Photo Credit: </span><a href="https://www.flickr.com">Flickr</a></div>
       </div>
     </div>
     <div class="row bike-photos">
       <div class="col-sm-4">
-        <div class="bike-holder">
+        <div id="bike-holder-1" class="bike-holder">
+          <a href="#" target="_blank" >
           <img src="images/bike-slider-1.jpg" alt="" />
+        </a>
         </div>
       </div>
       <div class="col-sm-4">
-        <div class="bike-holder">
+        <div id="bike-holder-2" class="bike-holder">
+          <a href="#" target="_blank" >
           <img src="images/bike-slider-2.jpg" alt="" />
+        </a>
         </div>
       </div>
       <div class="col-sm-4">
-        <div class="bike-holder">
+        <div id="bike-holder-3" class="bike-holder">
+          <a href="#" target="_blank" >
           <img src="images/bike-slider-3.jpg" alt="" />
+        </a>
         </div>
       </div>
+      <div class="photo-credit"><span>Photo Credit: </span><a href="https://www.flickr.com">Flickr</a></div>
     </div>
-    <div class="row promo tagline">
+    <div class="row promo">
       <div class="col-sm-12">
         <div class="holder">
-          <span>
-            From mountain bikes to kids training wheels, we've got what you need. Come join us for our Saturday community events or just stop by to say hello!
-          </span>
+          <span>From mountain bikes to kids training wheels, we've got what you need. Come join us for our Saturday community events or just stop by to say hello!</span>
         </div>
       </div>
     </div>
@@ -128,5 +152,6 @@
   <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/flickr.js"></script>
 </body>
 </html>
